@@ -1,7 +1,7 @@
-# 📌 Genéricos en Kotlin
+# 📌 Genéricos
 
 ## 📖 Introducción
-Los **genéricos** en Kotlin permiten escribir código flexible, reutilizable y seguro en términos de tipos. Son una herramienta fundamental en la **Programación Orientada a Objetos (POO)**, ya que permiten definir clases, interfaces y funciones que pueden operar con **diferentes tipos de datos** sin comprometer la seguridad de tipos.
+Los **genéricos** permiten escribir código flexible, reutilizable y seguro en términos de tipos. Son una herramienta fundamental en la **Programación Orientada a Objetos (POO)**, ya que permiten definir clases, interfaces y funciones que pueden operar con **diferentes tipos de datos** sin comprometer la seguridad de tipos.
 
 ## 🎯 Objetivos
 - Comprender qué son los genéricos y cómo funcionan.
