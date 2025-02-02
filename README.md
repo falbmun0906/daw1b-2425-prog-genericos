@@ -40,10 +40,10 @@ En este caso, `T` actúa como un **marcador de tipo**, lo que permite almacenar 
 - En el uso práctico, permiten operar con diferentes tipos sin modificar la implementación base.
 
 ### 🚀 Ventajas
-✅ **Código reutilizable**: No es necesario escribir múltiples versiones para cada tipo.
-✅ **Mayor seguridad de tipos**: Se detectan errores en tiempo de compilación.
-✅ **Menos casting manual**: Se pueden operar con diferentes tipos sin necesidad de convertirlos explícitamente.
-✅ **Más legibilidad y mantenibilidad**: Se reduce la redundancia en el código.
+- ✅ **Código reutilizable**: No es necesario escribir múltiples versiones para cada tipo.
+- ✅ **Mayor seguridad de tipos**: Se detectan errores en tiempo de compilación.
+- ✅ **Menos casting manual**: Se pueden operar con diferentes tipos sin necesidad de convertirlos explícitamente.
+- ✅ **Más legibilidad y mantenibilidad**: Se reduce la redundancia en el código.
 
 ---
 
