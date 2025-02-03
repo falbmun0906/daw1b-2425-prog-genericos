@@ -1,9 +1,9 @@
-# 📌 Genéricos
+# Genéricos
 
-## 📖 Introducción
+## Introducción
 Los **genéricos** permiten escribir código flexible, reutilizable y seguro en términos de tipos. Son una herramienta fundamental en la **Programación Orientada a Objetos (POO)**, ya que permiten definir clases, interfaces y funciones que pueden operar con **diferentes tipos de datos** sin comprometer la seguridad de tipos.
 
-## 🎯 Objetivos
+## Objetivos
 - Comprender qué son los genéricos y cómo funcionan.
 - Explorar su uso en **clases, funciones e interfaces**.
 - Identificar su implementación en la práctica del **Ahorcado**.
@@ -11,7 +11,7 @@ Los **genéricos** permiten escribir código flexible, reutilizable y seguro en 
 
 ---
 
-## 🛠️ 1. ¿Qué son los Genéricos?
+## 1. ¿Qué son los Genéricos?
 Los **genéricos** permiten definir estructuras de código que trabajan con diferentes tipos sin perder seguridad en tiempo de compilación.
 
 Por ejemplo, en lugar de escribir múltiples versiones de una clase para diferentes tipos, utilizamos un **tipo parametrizado `T`**:
@@ -34,12 +34,12 @@ En este caso, `T` actúa como un **marcador de tipo**, lo que permite almacenar 
 
 ---
 
-### 🎯 ¿Cómo se usan?
+### ¿Cómo se usan?
 - Se definen utilizando `<>`, por ejemplo: `List<T>`.
 - Se pueden aplicar en **clases**, **funciones** y **interfaces**.
 - En el uso práctico, permiten operar con diferentes tipos sin modificar la implementación base.
 
-### 🚀 Ventajas
+### Ventajas
 - ✅ **Código reutilizable**: No es necesario escribir múltiples versiones para cada tipo.
 - ✅ **Mayor seguridad de tipos**: Se detectan errores en tiempo de compilación.
 - ✅ **Menos casting manual**: Se pueden operar con diferentes tipos sin necesidad de convertirlos explícitamente.
@@ -47,7 +47,7 @@ En este caso, `T` actúa como un **marcador de tipo**, lo que permite almacenar 
 
 ---
 
-## 🔹 2. ¿Para qué o dónde se usan?
+## 2. ¿Para qué o dónde se usan?
 Los **genéricos** se utilizan en varios escenarios clave:
 
 1. **Colecciones y estructuras de datos** → `List<T>`, `Map<K, V>`, `Set<T>`.
@@ -79,7 +79,7 @@ Aquí `T` permite que la función `imprimirLista` acepte listas de **cualquier t
 
 ---
 
-## 🔍 3. Genéricos en la práctica del Ahorcado
+## 3. Genéricos en la práctica del Ahorcado
 En la implementación del juego del **Ahorcado**, encontramos el uso de genéricos en la siguiente función:
 
 ```kotlin
@@ -92,7 +92,7 @@ fun <T> MutableSet<T>.pop(): T? {
 }
 ```
 
-### 📌 Explicación:
+### Explicación:
 - `T` es un **parámetro genérico** que permite que `pop()` funcione con **cualquier tipo de conjunto** (`MutableSet<T>`).
 - `this.randomOrNull()` selecciona un **elemento aleatorio**.
 - Si el conjunto **no está vacío**, el elemento es eliminado y retornado.
@@ -107,7 +107,7 @@ fun <T> MutableSet<T>.pop(): T? {
  removerá el elemento, si es nulo retornará null.
 
 ```
-🔹 **Ejemplo de uso:**
+**Ejemplo de uso:**
 
 ```kotlin
 fun main() {
@@ -121,7 +121,7 @@ fun main() {
 
 ---
 
-## 🚀 4. Funciones de Extensión
+## 4. Funciones de Extensión
 Una **función de extensión** añade nuevas funcionalidades a una clase **sin modificar su código fuente**.
 
 📌 **Ejemplo:** Convertir valores `Boolean` a `"SI"` o `"NO"`:
@@ -139,10 +139,10 @@ Aquí, la función `adverb()` **extiende** la clase `Boolean` sin necesidad de m
 
 ---
 
-## 📝 5. Implementación de la función `filtrar`
+## 5. Implementación de la función `filtrar`
 La función `filtrar` será **genérica** y se aplicará a cualquier lista `List<T>`. Recibirá como parámetro una función `(T) -> Boolean` y devolverá los elementos que cumplan la condición.
 
-### ✨ **Ejemplo de uso:**
+### **Ejemplo de uso:**
 
 ```kotlin
 val lista = mutableListOf("Pablo", "Fran", "Diego", "Dani", "Federico", "Paula")
@@ -158,7 +158,7 @@ println(pablol3) // [Fran, Federico]
 println(pablol4) // []
 ```
 
-### 🎯 **Implementación de `filtrar`**
+### **Implementación de `filtrar`**
 
 ```kotlin
 fun <T> List<T>.filtrar(condicion: (T) -> Boolean): List<T> {
@@ -173,17 +173,17 @@ fun <T> List<T>.filtrar(condicion: (T) -> Boolean): List<T> {
 }
 ```
 
-📌 **Explicación:**
+**Explicación:**
 - `T` es **cualquier tipo de dato**.
 - La función `filtrar` recorre la lista y aplica la **condición dada como parámetro**.
 - Retorna una nueva lista con los elementos que cumplen la condición.
 
 ---
 
-## 🎤 Conclusión
+## Conclusión
 Los **genéricos en Kotlin** permiten escribir código más seguro, reutilizable y flexible. Son una herramienta clave para la programación moderna, especialmente en **estructuras de datos y funciones de extensión**.
 
-✅ **Puntos clave:**
+**Puntos clave:**
 - Permiten definir **clases, interfaces y funciones** que trabajan con **cualquier tipo de dato**.
 - Se usan en **colecciones, métodos reutilizables y abstracción**.
 - Garantizan **seguridad en tiempo de compilación** y evitan errores de conversión.
