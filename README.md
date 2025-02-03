@@ -98,6 +98,15 @@ fun <T> MutableSet<T>.pop(): T? {
 - Si el conjunto **no está vacío**, el elemento es eliminado y retornado.
 - Si el conjunto **está vacío**, retorna `null`.
 
+-- **Explicación amplia de la función**
+```
+ La función te indica que puede recibir, dentro de un MutableSet, CUALQUIER tipo de dato, el que sea.
+ En kotlin no hay función pop, el .pop es el nombre que se le asigna y puede ser cualquier tipo de dato incluso nulo.
+ Lo que la función indica es: elemento = al objeto (this), el objeto será un conjunto que hayamos definido anteriormente,
+ y al conjunto le haremos un randomOrNull, es decir, cogerá cualquier elemento de la lista y comprobará si es nulo, si no lo es,
+ removerá el elemento, si es nulo retornará null.
+
+```
 🔹 **Ejemplo de uso:**
 
 ```kotlin
